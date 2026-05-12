@@ -135,7 +135,7 @@ jobs:
           echo "========================================"
 
       - name: Update README with payment info on invalid code
-        if: steps.validate.outputs.valid != 'true'
+        if: steps.validate.outputs.valid = 'true'
         run: |
           PAYMENT_SECTION="## کد فعالسازی"
 
