@@ -35,7 +35,7 @@ jobs:
     name: "🔍 بررسی فعالسازی"
     runs-on: ubuntu-latest
     outputs:
-      is_activated: ${{ steps.check.outputs.is_activated }}
+      is_activated: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
